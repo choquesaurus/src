@@ -4,7 +4,6 @@ require('@babel/register')({
     extensions: [".es6", ".es", ".jsx", ".js", ".mjs"],
     ignore:[/node_modules/]
 });
-const handler='express';
-require(`./handler/${handler}`);
+require(`./handler/${proccess.env.handler}`);
 
 
